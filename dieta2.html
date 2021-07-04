@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0px;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .topnav #myLinks {
+      display: none;
+    }
+
+    .topnav a {
+      float: left;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .topnav a.icon {
+      float: left;
+    }
+
+    .topnav a:hover {
+      background-color: #BECA86;
+      color: rgb(255, 255, 255);
+      border-radius: 0px 0px 5px 5px;
+    }
+
+    .active {
+      background-image: linear-gradient(90deg, #BECA86, #90AC4A);
+      color: white;
+      border-radius: 0px 0px 5px 5px;
+    }
+
+    .fon {
+      /* The image used */
+      background-image: url("dieta.png");
+
+      /* Set a specific height */
+      min-height: 645px;
+
+      /* Create the parallax scrolling effect */
+
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .fon2 {
+      background-image: url("middle.png");
+
+      /* Set a specific height */
+      min-height: 645px;
+
+      /* Create the parallax scrolling effect */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .fon3 {
+      background-image: url("bottom.png");
+
+      /* Set a specific height */
+      min-height: 645px;
+
+      /* Create the parallax scrolling effect */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .inline-photo {
+      border: 15px solid #fff;
+      border-bottom: 40px solid #fff;
+      border-radius: 5px;
+      box-shadow: 1em 1em 2em .25em rgba(0, 0, 0, .2);
+      opacity: 0;
+      transform: translateY(-10em) rotateZ(-2deg);
+      transition: transform 4s .25s cubic-bezier(0, 1, .3, 1),
+        opacity .3s .25s ease-out;
+      max-width: 450px;
+      width: 80%;
+      will-change: transform, opacity;
+    }
+
+
+    .inline-photo.is-visible {
+      opacity: 1;
+      transform: rotateZ(2deg);
+    }
+
+    header {
+      opacity: 0;
+      transition: opacity .5s .25s ease-out;
+    }
+
+    header.is-visible {
+      opacity: 1;
+    }
+
+    .main-photo {
+      transform: scale(.8);
+    }
+
+    .heading{
+      transform: translateY(-10em) rotateZ(-2deg);
+      color:#e32633;
+      text-align: center;
+      margin-left: 650px;
+      margin-top: 80px;
+      margin-bottom:-70px;
+    }
+    .headingg{
+      transform: translateY(-10em) rotateZ(-2deg);
+      color:#e32633;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: -50px;
+      margin-left: 650px;
+      margin-top: 0px;
+      margin-bottom:-140px;
+    }
+
+    .is-visible .main-photo {
+      transform: none;
+    }
+
+    .is-visible .heading {
+      transform: translate(-50%, -50%);
+    }
+    .is-visible .headingg {
+      transform: translate(-50%, -50%);
+    }
+
+    .main-photo,
+    .heading {
+      transition: transform 2s .20s cubic-bezier(0, 1, .3, 1),
+        filter 
+        8s 2s ease-out;
+      will-change: transform;
+    }
+    .main-photo,
+    .headingg {
+      transition: transform 2s .20s cubic-bezier(0, 1, .3, 1),
+        filter 
+        8s 2s ease-out;
+      will-change: transform;
+    }
+
+    .content {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
+
+    .fon .content {
+      padding-top: 70px;
+      padding-bottom: 0px;
+    }
+    .fon2 .content {
+      padding-top: 120px;
+      padding-bottom: 0px;
+      margin-top:0px;
+    }
+    .fon3 .content {
+      padding-top: 120px;
+      padding-bottom: 0px;
+      margin-top:0px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="fon">
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+
+      <div id="myLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="#contact">Food</a>
+        <a href="#about">Sport</a>
+        <a href="shopping list.html">Shopping list</a>
+        <a href="#about">Contacts</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <header class="header show-on-scroll">
+      <div class="main-photo"></div>
+      <h1 class="heading">DIET JAPANESSE MIRACLE</h1>
+    </header>
+    <article class="content">
+      <p>
+        <img class="inline-photo show-on-scroll" src="eggs.jpg" alt="Eggs"
+          style="float: right;  margin-left: 50px; margin-bottom: 30px; margin-top: 50px;">
+           
+        <b>Diet Japanese miracle</b> is drastic but efficient. A Japanese wonder is a diet that lasts for just two weeks.
+        There are a few rules that need to be followed before you start performing the diet.
+        Coffee can be replaced with tea, but it is mandatory to be sugar-free. In addition, no alcohol,
+        as well as salt, should be consumed during the diet.<br><br>
+
+        During the first seven days of the diet you will lose 5 to 7 kg.
+        The next seven days the diet is repeated, then you will lose weight about half a pound a day.
+        Of course, your weight loss depends on your body, your age, and your metabolism.
+        If you do not feel well, stop it as it is pretty drastic.<br><br>
+
+        It’s nice to do the diet strictly, but if you get hungry between meals, you can eat some vegetable or fruit.
+        For breakfast during the two weeks you drink only a cup of pure bitter coffee, if you prefer you can replace it
+        with tea.
+        Only on the second and ninth day of the diet to the coffee or tea add one dry snack. It is good to drink at
+        least 1.5 liters of water per day.
+        Do not repeat the diet in the next half year. Once finished, start eating moderately – do not fry on fried or
+        baked products. Eat healthy.
+      </p>
+
+    </article>
+
+
+  </div>
+
+  <div class="fon2">
+    <header class="header show-on-scroll">
+      <div class="main-photo"></div>
+      <h2 class="headingg">SEVEN DAYS PLAN</h2>
+    </header>
+    <article class="content">
+      <p><img class="inline-photo show-on-scroll" src="fish.jpg" alt="Eggs"
+          style="float: right;  margin-left: 50px; margin-bottom: -100px; margin-top: 30px;">
+        <p>
+          <b> On the first day</b>, at lunch, eat two eggs – hard boiled, and for dinner,
+          make a salad with lemon juice and a little olive oil like a side dish of a piece of roast meat.<br>
+          <b>On the second day</b> – at lunchtime, you have two hard-boiled eggs again. Dinner is a salad, a glass of
+          yogurt and a piece of ham. <br>
+          <b> On the third day</b> – for lunch, eat fruit or vegetables at your choice. At dinner the third day eat two
+          eggs – hard boiled. <br>
+          <b> On the fourth day </b> – for lunch, have two boiled eggs and one cup of carrot juice.<br>
+           Dinner be again with two
+          boiled eggs, add a little salad, and a piece of ham. <br>
+          <b> On the fifth day </b> – for lunch, eat baked fish, and add a tomato as a side dish.<br> Dinner is omitted. <br>
+          <b> On the sixth day </b>– for lunch, eat two pieces of chicken, best roasted. <br>Dinner to be of your well-known two
+          hard boiled eggs and one carrot. <br>
+          <b>On the seventh day</b> – lunch is with a piece of roasted meat and fruit<br> of choice. For dinner, eat something to
+          your liking.<br><br>
+        
+     
+      </p>
+    </article>
+  </div>
+
+  <div class="fon3">
+    <header class="header show-on-scroll">
+      <div class="main-photo"></div>
+      <h2 class="headingg">SEVEN DAYS PLAN</h2>
+    </header>
+    <article class="content">
+      <p><img class="inline-photo show-on-scroll" src="fish.jpg" alt="Eggs"
+          style="float: right;  margin-left: 50px; margin-bottom: -100px; margin-top: 30px;">
+        <p>
+          <b> On the first day</b>, at lunch, eat two eggs – hard boiled, and for dinner,
+          make a salad with lemon juice and a little olive oil like a side dish of a piece of roast meat.<br>
+          <b>On the second day</b> – at lunchtime, you have two hard-boiled eggs again. Dinner is a salad, a glass of
+          yogurt and a piece of ham. <br>
+          <b> On the third day</b> – for lunch, eat fruit or vegetables at your choice. At dinner the third day eat two
+          eggs – hard boiled. <br>
+          <b> On the fourth day </b> – for lunch, have two boiled eggs and one cup of carrot juice.<br>
+           Dinner be again with two
+          boiled eggs, add a little salad, and a piece of ham. <br>
+          <b> On the fifth day </b> – for lunch, eat baked fish, and add a tomato as a side dish.<br> Dinner is omitted. <br>
+          <b> On the sixth day </b>– for lunch, eat two pieces of chicken, best roasted. <br>Dinner to be of your well-known two
+          hard boiled eggs and one carrot. <br>
+          <b>On the seventh day</b> – lunch is with a piece of roasted meat and fruit<br> of choice. For dinner, eat something to
+          your liking.<br><br>
+        
+     
+      </p>
+    </article>
+  </div>
+
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <script>
+    // Detect request animation frame
+    var scroll = window.requestAnimationFrame ||
+      // IE Fallback
+      function (callback) {
+        window.setTimeout(callback, 1000 / 60)
+      };
+    var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+    function loop() {
+
+      Array.prototype.forEach.call(elementsToShow, function (element) {
+        if (isElementInViewport(element)) {
+          element.classList.add('is-visible');
+        } else {
+          element.classList.remove('is-visible');
+        }
+      });
+
+      scroll(loop);
+    }
+
+    // Call the loop for the first time
+    loop();
+
+    // Helper function from: http://stackoverflow.com/a/7557433/274826
+    function isElementInViewport(el) {
+      // special bonus for those using jQuery
+      if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+      }
+      var rect = el.getBoundingClientRect();
+      return (
+        (rect.top <= 0 &&
+          rect.bottom >= 0) ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+        (rect.top >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+      );
+    }
+  </script>
+</body>
+
+</html>
